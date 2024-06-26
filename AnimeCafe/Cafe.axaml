@@ -1,0 +1,131 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="4672"
+        x:Class="AnimeCafe.Cafe"
+		Width="1515"
+		x:CompileBindings="False"
+		WindowState="FullScreen"
+		CanResize="True"
+        Title="Cafe">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Margin="468,12,0,0" Grid.Column="3">
+						<Image Grid.Column="0" Grid.Row="0"  />
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<Image Grid.Row="1" Source="\Assets\Default_cute_cozy_cafe_pastel_colors_pale_pink_bar_counter_5_b_3 1.png"/>
+			<StackPanel Grid.Row="2" Height="846" Background="#FFF9EA">
+				<Grid RowDefinitions="Auto,Auto">
+					<Menu HorizontalAlignment="Center" Margin="0,60,0,0" Grid.Row="0">
+						<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+						<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+						<MenuItem Classes="MenuSpan" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+						<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+						<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+						<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+					</Menu>
+					<Border Margin="0,50,0,0" Width="1319" Height="579" Background="#EDD9D3" CornerRadius="10" HorizontalAlignment="Center" Grid.Row="1">			
+						<StackPanel>
+							<TextBlock Classes="H2" Margin="0,40,0,0">Наши Кафе</TextBlock>
+							<Border Margin="0,20,0,0" HorizontalAlignment="Center" Width="1175" Height="360" Background="#FFF9EA" CornerRadius="15">
+								<TextBlock Margin="0,80,0,0" LineHeight="55" FontWeight="Bold" Foreground="#877A64" FontSize="32" xml:space="preserve" TextAlignment="Center" Width="1124" TextWrapping="Wrap">Мы рады приветствовать вас в нашей сети уютных кафе, где
+любители аниме и японской культуры могут собраться вместе,
+насладиться вкусными блюдами и напитками и окунуться в
+мир своих любимых персонажей.</TextBlock>
+							</Border>
+						</StackPanel>
+					</Border>
+					</Grid>
+			</StackPanel>
+			<StackPanel Height="2182" Grid.Row="3" Background="#EDD9D3">
+				<Border HorizontalAlignment="Center" CornerRadius="0 0 25 25" Background="#FFF9EA" Width="1024" Height="180">
+					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="Bold" Foreground="#53451F" xml:space="preserve" TextAlignment="Center" Width="1035" TextWrapping="Wrap">P.S. В настоящее время у нас есть два кафе,
+расположенных в следующих городах:</TextBlock>
+				</Border>
+				<TextBlock Margin="122,69,0,0" HorizontalAlignment="Left" Foreground="#53451F" FontSize="36" FontWeight="Bold">Москва, Красноярский район:</TextBlock>
+				<Image Margin="43,72,0,0" HorizontalAlignment="Left" Height="461" Width="763" Source="\Assets\5ff09459-11f6-4e13-b64d-0bfa3a7a76cf 1.png"/>
+				<Button Width="571" Height="61" Background="#FFF9EA" CornerRadius="35" HorizontalAlignment="Center" Margin="0,97,0,0">
+					<TextBlock Margin="0,12,0,0" HorizontalAlignment="Center" Foreground="#877A64" FontSize="24" FontWeight="Bold">Телеграм “Москва”</TextBlock>
+				</Button>
+				<TextBlock Margin="122,130,0,0" HorizontalAlignment="Left" Foreground="#53451F" FontSize="36" FontWeight="Bold">Санкт-Петербург, Набережная Мойки</TextBlock>
+				<Image Margin="197,87,0,0" HorizontalAlignment="Left" Width="552" Source="\Assets\51634598-0c1a-4d33-85b5-f37b6956dff9 1.png"/>
+				<Button Width="571" Height="61" Background="#FFF9EA" CornerRadius="35" HorizontalAlignment="Left" Margin="262,130,0,0">
+					<TextBlock Margin="0,12,0,0" HorizontalAlignment="Center" Foreground="#877A64" FontSize="24" FontWeight="Bold">Телеграм “Питер”</TextBlock>
+				</Button>
+				<Border Margin="0, 117,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Center" CornerRadius="25 25 0 0" Background="#FFF9EA" Width="1024" Height="180">
+					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#53451F" xml:space="preserve" TextAlignment="Center" Width="869" TextWrapping="Wrap">Все наши кафе имеют уникальный дизайн, посвященный 
+различным аниме-сериалам и манге. Вы можете найти зоны,
+оформленные в стиле "Наруто", "Клинок, рассекающий демонов"
+и других популярных франшиз.</TextBlock>
+				</Border>
+			</StackPanel>
+			<StackPanel Grid.Row="4" Height="656" Background="#FFF9EA">
+				<StackPanel Orientation="Horizontal">
+					<Border HorizontalAlignment="Left" Width="833" Height="115" Background="#EDD9D3" CornerRadius="0 24 24 0">
+						<TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontWeight="ExtraBold" LineHeight="30" Foreground="#877A64" xml:space="preserve" TextAlignment="Center" Width="708" TextWrapping="Wrap">Мы предлагаем широкий выбор блюд и напитков, вдохновленных аниме и
+японской кухней. Насладитесь нашими фирменными раменами, донбури,
+карри и сладостями, которые порадуют как ваш желудок, так и ваши глаза.</TextBlock>
+					</Border>
+					<Image HorizontalAlignment="Right" Margin="92,47,0,0" Source="\Assets\4cc05278-3917-49bd-aa4d-accf8b1bc132 1.png"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<Image Margin="101,0,0,0" HorizontalAlignment="Left" Width="479" Source="\Assets\d521f6a21dd5aee903e84fd07ff5b3a2 1.png"/>
+					<Border Margin="102,0,0,0" HorizontalAlignment="Right" Width="833" Height="115" Background="#EDD9D3" CornerRadius="24 0 0 24">
+						<TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontWeight="ExtraBold" LineHeight="30" Foreground="#877A64" xml:space="preserve" TextAlignment="Center" Width="708" TextWrapping="Wrap">Кроме того, в наших кафе есть магазины, где вы можете приобрести 
+эксклюзивные товары и сувениры, посвященные аниме и манге.</TextBlock>
+					</Border>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel Margin="0,0,0,215" Grid.Row="5" Height="407" Background="#EDD9D3">
+				<TextBlock Margin="200,130,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+			<Image VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="800,0,0,1360" Grid.RowSpan="4" Width="512" Source="\Assets\fbb3b59c-54be-4440-9043-eaf6635c86d5 1.png"/>
+			<Image VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,95,350" Grid.RowSpan="4" Width="512" Source="\Assets\9b380612-055e-4c00-a184-c194be56cc1c 1.png"/>
+			<Image Margin="50,2700,0,0" HorizontalAlignment="Left" Grid.RowSpan="4" Width="156" Source="\Assets\Ellipse 70.png"/>
+			<Image/>
+			<Image/>
+		</Grid>
+	</ScrollViewer>
+</Window>

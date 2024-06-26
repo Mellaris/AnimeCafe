@@ -1,0 +1,144 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="3981"
+        x:Class="AnimeCafe.MenuSpecial"
+		Width="1515"
+		x:CompileBindings="False"
+		CanResize="True"
+		WindowState="FullScreen"
+        Title="MenuSpecial">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="Image.ImMenuLeft">
+			<Setter Property="Width" Value="400"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Margin" Value="65"/>
+		</Style>
+		<Style Selector="Image.ImMenuR">
+			<Setter Property="Width" Value="400"/>
+			<Setter Property="HorizontalAlignment" Value="Right"/>
+			<Setter Property="Margin" Value="84,0,0,0"/>
+		</Style>
+		<Style Selector="TextBlock.MenuH3">
+			<Setter Property="FontSize" Value="32"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+		</Style>
+		<Style Selector="TextBlock.MenuText">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Margin" Value="0,80,0,0"/>
+			<Setter Property="TextAlignment" Value="Center"/>
+			<Setter Property="TextWrapping" Value="Wrap"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="905,Auto">
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Column="0">
+						<TextBlock Classes="H1" Margin="55,19,0,0" >Время работы пн-вс 10-23</TextBlock>
+						<TextBlock Classes="H1" Margin="109,19,0,0" >E-mail: animecafe@gmail.com</TextBlock>
+						<TextBlock Classes="H1" Margin="109,19,0,0" >+ 7 (981) 909-99-00</TextBlock>
+					</StackPanel>
+
+					<StackPanel  Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
+						<Button Margin="468,12,0,0">
+							<Image Grid.Column="0" Grid.Row="0"  />
+						</Button>
+						<Button  Margin="21,12,0,0" >
+							<Image></Image>
+						</Button>
+						<Button  Margin="21,12,0,0">
+							<Image></Image>
+						</Button>
+					</StackPanel>
+				</Grid>
+			</StackPanel>
+			<Image Grid.Row="1" Source="\Assets\Default_Birthday_party_table_0 1.png"/>
+			<StackPanel Grid.Row="2" Height="100" Background="#FFF9EA">
+				<Menu HorizontalAlignment="Center" Margin="0,41,0,0">
+					<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+					<MenuItem Click="StandartMenu" Classes="MenuSpan" Margin="120,0,0,0" Header="Меню"></MenuItem>
+					<MenuItem Click="Cafes" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+					<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+					<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+					<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+				</Menu>
+			</StackPanel>
+			<StackPanel Background="#FFF9EA" Height="626" Grid.Row="3">
+				<Border Margin="0,0,0,0" Width="1387" Height="565" Background="#EDD9D3" CornerRadius="10" HorizontalAlignment="Center">
+					<StackPanel>
+						<TextBlock Classes="H2" Margin="0,40,0,0">Меню именинника</TextBlock>
+						<Border Margin="0,20,0,0" HorizontalAlignment="Center" Width="1236" Height="360" Background="#FFF9EA" CornerRadius="15">
+							<TextBlock Margin="0,80,0,0" LineHeight="55" FontWeight="Bold" Foreground="#877A64" FontSize="32" xml:space="preserve" TextAlignment="Center" Width="1052" TextWrapping="Wrap">Отпразднуйте свой день рождения в нашем кафе и погрузитесь в яркие вкусы корейской кухни. Наше эксклюзивное меню для именинников гарантирует незабываемое празднование, которое порадует вас и ваших гостей. </TextBlock>
+						</Border>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+			<StackPanel Background="#EDD9D3" Height="2438" Grid.Row="4">
+				<Border CornerRadius="15"  Margin="0,58,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<Image Classes="ImMenuLeft" Source="\Assets\Default_Pink_and_blue_birthday_cupcakes_1 1.png"></Image>
+						<StackPanel>
+							<TextBlock Margin="170,140,0,0" Classes="MenuH3">Праздничные кексы</TextBlock>
+							<TextBlock Width="678" Classes="MenuText">Свежеиспеченные праздничные кексы, покрытые бархатистой глазурью, источают неотразимый аромат, дразнящий ваши вкусовые рецепторы. Карамелизированный сахар тает во рту, источая сладкую волну, которая тает на языке. Воздушный бисквит медленно оседает, высвобождая нежный аромат цитрусовых и ванили. Каждый укус - это симфония вкусов, оставляющая вас в блаженном состоянии сладкого удовлетворения.</TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<Border CornerRadius="15"  Margin="0,97,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<StackPanel>
+							<TextBlock Margin="330,207,0,0" Classes="MenuH3">Суп миёккук</TextBlock>
+							<TextBlock Margin="83,80,0,0" Width="678" Classes="MenuText">Традиционный корейский суп миёккук пробуждает аппетит своим глубоким морским ароматом. Сочные кусочки говядины тают во рту, высвобождая вкусные соки в прозрачный бульон, сваренный из водорослей и анчоусов. Шелк тонкой лапши скользит по языку, дополняя согревающее и аппетитное блюдо, которое идеально подходит для празднования дня рождения.</TextBlock>
+						</StackPanel>
+						<Image Classes="ImMenuR" Source="\Assets\Default_Traditional_Korean_meekkook_soup_1 1.png"></Image>
+					</StackPanel>
+				</Border>
+				<Border CornerRadius="15"  Margin="0,97,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<Image Classes="ImMenuLeft" Source="\Assets\Default_Three_overshakes_with_lots_of_sweets_1 1.png"></Image>
+						<StackPanel>
+							<TextBlock  Margin="260,140,0,0" Classes="MenuH3">Овершейк</TextBlock>
+							<TextBlock  Width="678" Classes="MenuText">Приготовьтесь к молочному коктейлю, который заставит ваши вкусовые рецепторы танцевать от восторга! Наш овершейк - это шедевр, украшенный горой взбитых сливок, яркой посыпкой и сочными конфетами. Под слоем сладостей скрывается гладкий и кремовый молочный коктейль, изготовленный из самых свежих ингредиентов.</TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<Button Click="StandartMenu" Margin="0,90,0,0" Background="#FFF9EA" CornerRadius="24" Width="450" Height="63" HorizontalAlignment="Center">
+					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="ExtraBold" Foreground="#5A4C35">Основное меню</TextBlock>
+				</Button>
+			</StackPanel>
+			<StackPanel Margin="0,0,0,0" Grid.Row="5" Height="407" Background="#EDD9D3">
+				<TextBlock Margin="263,100,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

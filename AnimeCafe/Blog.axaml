@@ -1,0 +1,170 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="4500"
+        x:Class="AnimeCafe.Blog"
+		Width="1515"
+		x:CompileBindings="False"
+		WindowState="FullScreen"
+		CanResize="True"
+        Title="Blog">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.H_Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<StackPanel Background="#EDD9D3">
+		<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Margin="468,12,0,0" Grid.Column="3">
+						<Image Grid.Column="0" Grid.Row="0"  />
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<StackPanel Margin="0,0,0,0" Background="#FFF9EA" Height="727" Grid.Row="1">
+				<Grid RowDefinitions="Auto,Auto,Auto">
+					<Menu HorizontalAlignment="Left" Margin="124,60,0,0" Grid.Row="0">
+						<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+						<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+						<MenuItem Click="Cafe_Click" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+						<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+						<MenuItem Classes="MenuSpan" Margin="120,0,0,0" Header="Блог"></MenuItem>
+						<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+					</Menu>
+					<Border Margin="0,59,0,0" HorizontalAlignment="Center" CornerRadius="24" Grid.Row="1" Width="1313" Height="583" Background="#EDD9D3">
+						<StackPanel>
+							<TextBlock Margin="0,48,0,0" Classes="H2">Лилейный дневник отаку!</TextBlock>
+							<TextBlock Margin="0,81,0,0" FontWeight="ExtraBold" FontSize="24" Foreground="#877A64" xml:space="preserve" TextAlignment="Center" Width="764" TextWrapping="Wrap">Приветствуем вас на блоге аниме-кафе "Летняя лилия"! Это
+место, где мы делимся нашей страстью к аниме, манге и
+японской культуре.</TextBlock>
+						</StackPanel>
+					</Border>
+				</Grid>
+			</StackPanel>
+
+			<StackPanel Height="1743" Grid.Row="2" Background="#EDD9D3">
+				<Border Margin="0,354,0,0" CornerRadius="24" Width="936" Height="206" Background="#FFF9EA">
+					<TextBlock FontWeight="ExtraBold" Margin="0,57,0,0" FontSize="24" Foreground="#887951" xml:space="preserve" TextAlignment="Center" Width="819" TextWrapping="Wrap">Здесь вы найдете интересные статьи, эксклюзивные
+новости и захватывающий контент, который порадует как
+заядлых отаку, так и тех, кто только начинает свое
+знакомство с миром аниме.</TextBlock>
+				</Border>
+				<StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+					<TextBlock Margin="27,75,0,0" HorizontalAlignment="Left" Classes="H_Menu">Обзоры аниме и игр</TextBlock>
+					<TextBlock Margin="372,75,0,0" HorizontalAlignment="Center" Classes="H_Menu">Новости и события</TextBlock>
+					<TextBlock Margin="332,75,0,0" HorizontalAlignment="Right" Classes="H_Menu">Рецепты и кулинария</TextBlock>
+				</StackPanel>
+				<Border Margin="0,36,0,0" Background="#5A4C35" Height="3"></Border>
+				<Border Margin="0,86,0,0" CornerRadius="24" Width="1181" Height="711" Background="#FFF9EA">
+					<StackPanel>
+						<TextBlock Margin="0,44,0,0" Classes="H2">Обзоры</TextBlock>
+						<Button Background="#FFF9EA" Click="NewVeb" Height="460" Width="800" Margin="0,30,0,0" HorizontalAlignment="Center">
+							<Image  Width="800" Margin="0,0,0,0" HorizontalAlignment="Center" Source="\Assets\a09edfe9-e9e4-488f-a997-5bed5234d993.png"/>
+						</Button>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+
+			<StackPanel Background="#FFF9EA" Grid.Row="3" Height="1181">
+				<StackPanel>
+				<TextBlock Margin="0,66,0,0" Classes="H2">Новости и события</TextBlock>
+				<TextBlock Margin="76,66,0,0" FontSize="32" Foreground="#53451F" FontWeight="SemiBold" HorizontalAlignment="Left">Последние новости</TextBlock>
+				</StackPanel>
+			
+				<ListBox Margin="0,30,0,0"  Name="ListArticles" Width="1408" Height="695" Background="#EDD9D3" >
+					<ListBox.ItemTemplate>
+						<DataTemplate>				
+									<StackPanel Orientation="Horizontal">			
+											<Border CornerRadius="10" Width="394" Height="274" Background="#FFF9EA">
+												<Image HorizontalAlignment="Center" Width="364" Height="223" Source="{Binding ArticleImage}"></Image>
+											</Border>
+											<TextBlock TextWrapping="WrapWithOverflow" HorizontalAlignment="Center" Margin="60,40,0,0"  FontSize="20" Width="445" Foreground="#FF7C7C" Text="{Binding Start}"/>
+											<Button Click="OpenBigArticle" Tag="{Binding idArticle}" Margin="80,0,0,0" HorizontalAlignment="Right" Background="#FFF9EA" Width="382" Height="67" CornerRadius="10">
+												<TextBlock FontSize="32" FontWeight="Medium"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#877A64">Узнать больше</TextBlock>
+											</Button>
+									</StackPanel>						
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+			</StackPanel>
+
+			<StackPanel Background="#EDD9D3" Grid.Row="4" Height="1328">
+				<TextBlock Margin="0,78,0,0" Classes="H2">Промокоды</TextBlock>
+				<Border CornerRadius="0 50 50 0" Width="889" Height="120" Background="#FFF9EA" HorizontalAlignment="Left" Margin="0,87,0,0">
+					<TextBlock Margin="0,24,0,0" FontWeight="Medium" FontSize="32" Foreground="#877A64" xml:space="preserve" TextAlignment="Center" Width="709" TextWrapping="Wrap">Заказывайте мерч с промокодами и экономьте!</TextBlock>
+				</Border>
+				<ListBox CornerRadius="20" Margin="0,30,0,0"  Name="Promos" Width="1416" Height="533" Background="#EDD9D3" >
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<Border CornerRadius="10" Margin="0,36,0,0" HorizontalAlignment="Center" Background="#FFF9EA" Width="1362" Height="231">
+								<StackPanel Orientation="Horizontal">
+									<Grid ColumnDefinitions="551,551, Auto">
+										<TextBlock VerticalAlignment="Center" Foreground="#53451F" FontWeight="Bold" FontSize="40" HorizontalAlignment="Center" Grid.Column="0" Text="{Binding NamePromo}"></TextBlock>
+										<TextBlock Text="{Binding SalePromo}" VerticalAlignment="Center" Foreground="#53451F" FontWeight="Bold" FontSize="40" HorizontalAlignment="Center" Grid.Column="1"></TextBlock>
+										<Button Tag="{Binding idCopyPromo}" Click="CopyPromo" Grid.Column="2" Margin="0,0,0,0" CornerRadius="10" Width="182" Height="45" Background="#EDD9D3" >
+											<TextBlock Margin="0,5,0,0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#877A64">Kопировать</TextBlock>
+										</Button>
+									</Grid>
+								</StackPanel>
+							</Border>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+				
+				
+			</StackPanel>
+			<StackPanel Margin="0,0,0,215" Grid.Row="6" Height="207" Background="#EDD9D3">
+				<TextBlock HorizontalAlignment="Center" Margin="0,0,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+			<Image HorizontalAlignment="Left" Grid.RowSpan="4" Margin="20,0,960,2070" Width="413" Height="546" Source="\Assets\ғᴏᴏᴅ ᴅʀᴀᴡɪɴɢ 1.png"/>
+			<Image HorizontalAlignment="Center" Grid.RowSpan="4" Margin="0,0,0,2070" Width="413" Height="546" Source="\Assets\Nyam, Maria Azaryan 마리아 아사랸 1.png"/>
+			<Image HorizontalAlignment="Right" Grid.RowSpan="4" Margin="0,0,20,2070" Width="413" Height="546" Source="\Assets\ғᴏᴏᴅ ᴅʀᴀᴡɪɴɢ (1) 1.png"/>
+			<Image Grid.RowSpan="5" Margin="0,0,0,480" HorizontalAlignment="Left" Width="428" Source="/Assets/Ellipse 13 (1).png"/>
+			<Image Margin="38,0,0,370" Grid.RowSpan="5" Width="368" HorizontalAlignment="Left" Source="\Assets\3d-casual-life-speech-bubbles 1.png"/>
+			<Image Margin="0,0,30,220" HorizontalAlignment="Right" Width="256" Grid.RowSpan="5" Source="\Assets\icons8-youtube-256 1.png"/>
+			<Image Width="265" HorizontalAlignment="Right" Margin="0,1680,53,0" Grid.RowSpan="6" Source="\Assets\3d-casual-life-magnifying-glass-green 1.png"/>
+		</Grid>
+		</StackPanel>
+	</ScrollViewer>
+</Window>

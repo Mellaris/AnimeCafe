@@ -1,0 +1,98 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="2448"
+        x:Class="AnimeCafe.ArticleOpen"
+		Width="1515"
+		x:CompileBindings="False"
+		WindowState="FullScreen"
+		CanResize="True"
+        Title="ArticleOpen">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.H_Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Margin="468,12,0,0" Grid.Column="3">
+						<Image Grid.Column="0" Grid.Row="0"  />
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			
+			
+			<StackPanel Background="#EDD9D3" Grid.Row="1" Height="2117">
+				<Border HorizontalAlignment="Center" Margin="0,29,0,0" Background="#FFF9EA" Width="1448" Height="61">
+					<StackPanel>
+						<Menu VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20,0,0" Grid.Row="0">
+							<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+							<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+							<MenuItem Click="Cafes" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+							<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+							<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+							<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+						</Menu>
+					</StackPanel>	
+				</Border>
+				<TextBlock Margin="0,51,0,0" HorizontalAlignment="Center" FontSize="64" FontWeight="ExtraBold" Foreground="#FF7C7C" Name="title"></TextBlock>
+				<StackPanel Orientation="Horizontal">
+					<Image Width="768" Height="528" Margin="65,51,0,0" HorizontalAlignment="Left" Name="image" Source="{Binding ArticleImage}"/>
+					<Image Margin="52,0,0,0" HorizontalAlignment="Right" Width="667" Source="\Assets\bubble-gum-tv-reporter.png"/>
+				</StackPanel>
+				<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="30" Foreground="#FF7C7C" Background="#FFF9EA" Width="1389" Height="692" Name="textBaza"></TextBlock>
+				<TextBlock Name="tema" HorizontalAlignment="Center" Margin="0,48,0,0" Height="61" FontSize="30" Foreground="#FF7C7C" Background="#FFF9EA" Width="1389"></TextBlock>
+				<TextBlock Name="data" HorizontalAlignment="Left" Margin="65,48,0,0" Height="77" FontSize="30" Foreground="#FF7C7C" Background="#FFF9EA" Width="424"></TextBlock>
+				<Button Click="BackBlog" Margin="0,180,0,0" HorizontalAlignment="Center" Background="#FFF9EA" Width="795" Height="77">
+					<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0" FontSize="40" FontWeight="ExtraBold" Foreground="#FF7C7C">Вернуться назад</TextBlock>
+				</Button>
+			</StackPanel>
+			
+			
+			
+			<StackPanel Margin="0,0,0,215" Grid.Row="2" Height="407" Background="#EDD9D3">
+				<TextBlock Margin="200,130,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

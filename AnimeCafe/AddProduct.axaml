@@ -1,0 +1,111 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="1333"
+        x:Class="AnimeCafe.AddProduct"
+		Width="1515"
+		x:CompileBindings="False"
+		WindowState="FullScreen"
+		CanResize="True"
+        Title="AddProduct">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="48"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.hText">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#FF7C7C"/>
+			<Setter Property="FontWeight" Value="ExtraBold"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+		</Style>
+		<Style Selector="TextBox.borderText">
+			<Setter Property="Width" Value="514"/>
+			<Setter Property="Height" Value="70"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Background" Value="White"/>
+			<Setter Property="BorderBrush" Value="White" />
+			<Setter Property="CornerRadius" Value="10"/>
+			<Setter Property="Margin" Value="94,35,0,0"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto">
+			<StackPanel Grid.Row="0" Height="187" Background="#FFF9EA">
+				<Button Click="ExitAdmin" Margin="0,37,61,0" HorizontalAlignment="Right" Background="#FFF9EA" Width="200" Height="60">
+					<TextBlock HorizontalAlignment="Center" Foreground="#877A64" FontSize="32" FontWeight="Bold" >Аккаунт</TextBlock>
+				</Button>
+				<TextBlock Margin="0,0,0,0" VerticalAlignment="Bottom" Classes="H2">Добавление Товара</TextBlock>
+			</StackPanel>
+			<StackPanel Grid.Row="1" Height="88" Background="#EDD9D3">
+				<Menu HorizontalAlignment="Center" Margin="0,53,0,0" Grid.Row="0">
+					<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+					<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+					<MenuItem Click="Cafes" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+					<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+					<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+					<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+				</Menu>
+	       </StackPanel>
+			<StackPanel Grid.Row="2" Height="1058" Background="#EDD9D3">
+				<Border HorizontalAlignment="Center" CornerRadius="15" Margin="0,35,0,0" Background="#FFF9EA" Width="1429" Height="970">
+					<StackPanel>
+						<Grid ColumnDefinitions="Auto,Auto">
+							<StackPanel Grid.Column="0">
+								<TextBlock Margin="94,77,0,0" Classes="hText">Название продукта</TextBlock>
+								<TextBox Name="NameProd" Classes="borderText"></TextBox>
+								<TextBlock Padding="0,35,0,0" Margin="94,0,0,0" Classes="hText">Тип</TextBlock>
+								<ComboBox Name="TypeProd" SelectedIndex="0" Width="514" Height="70" Background="White" BorderBrush="White" Margin="94,35,0,0">
+									<ComboBoxItem>Фигурка</ComboBoxItem>
+									<ComboBoxItem>Брелок</ComboBoxItem>
+									<ComboBoxItem>Чашка</ComboBoxItem>
+									<ComboBoxItem>Бокс</ComboBoxItem>
+									<ComboBoxItem>Одежда</ComboBoxItem>
+								</ComboBox>
+								<TextBlock Padding="0,35,0,0" Margin="94,0,0,0" Classes="hText">Количество</TextBlock>
+								<TextBox Name="KolProd" Classes="borderText"></TextBox>
+								<TextBlock Padding="0,35,0,0" Margin="94,0,0,0" Classes="hText">Стоимость</TextBlock>
+								<StackPanel Orientation="Horizontal">
+									<TextBox Name="CostProd" Classes="borderText"></TextBox>
+									<Button Click="AddPict" Margin="251,0,0,0" HorizontalAlignment="Right" Background="#EDD9D3" Width="438" Height="57">
+										<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="ExtraBold" FontSize="24" Foreground="#FF7C7C">Добавить Изображение</TextBlock>
+									</Button>
+								</StackPanel>
+							</StackPanel>
+							
+								<Image Grid.ColumnSpan="1" Margin="700,50,0,0" Name="image" Source="{Binding ProductImage}" Width="200" Height="333"/>
+						
+						</Grid>
+						
+						<StackPanel Orientation="Horizontal">
+							<Button Click="AddProductClick" Margin="107,110,0,0" HorizontalAlignment="Left" Background="#EDD9D3" Width="438" Height="57">
+								<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="ExtraBold" FontSize="24" Foreground="#FF7C7C">Добавить Товар</TextBlock>
+							</Button>
+							<CheckBox Name="Box" IsChecked="false" FontWeight="ExtraBold" Foreground="#FF7C7C" FontSize="28" Margin="50,110,0,0">Самый желанный товар</CheckBox>
+						</StackPanel>
+						<TextBlock Name="Message" FontWeight="ExtraBold" Foreground="#FF7C7C" FontSize="28" Margin="50,30,0,0"></TextBlock>
+
+					</StackPanel>
+				</Border>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

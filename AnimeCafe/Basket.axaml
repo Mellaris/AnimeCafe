@@ -1,0 +1,151 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="1848"
+        x:Class="AnimeCafe.Basket"
+		Width="1515"
+		WindowState="FullScreen"
+		x:CompileBindings="False"
+		CanResize="True"
+        Title="Basket">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.BasketText">
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.TextBusk">
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="FontSize" Value="40"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Margin="468,12,0,0" Grid.Column="3">
+						<Image Grid.Column="0" Grid.Row="0"  />
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<StackPanel Height="1309" Grid.Row="1" Background="#FFF9EA">
+				<TextBlock Classes="H2" Margin="0,44,0,0">Корзина</TextBlock>
+				<Menu HorizontalAlignment="Center" Margin="0,53,0,0" Grid.Row="0">
+					<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+					<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+					<MenuItem Click="Cafes" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+					<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+					<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+					<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+				</Menu>
+				<StackPanel Orientation="Horizontal">
+					<ListBox Margin="30,30,0,0"  Name="BasketList" Width="764" Height="915" Background="#EDD9D3" >
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<Border Margin="0,30,0,0" CornerRadius="10" Background="#FFF9EA" Width="633" Height="500">
+									<StackPanel Orientation="Horizontal">
+
+										<Image HorizontalAlignment="Left" Margin="27,0,0,0" Width="200" Height="333" Source="{Binding ProductImage}"></Image>
+										<StackPanel Margin="36,40,0,0" Orientation="Vertical">
+											<TextBlock Text="{Binding NameProduct}" Margin="30,0,0,0" FontSize="32" Classes="BasketText" Name="Name"></TextBlock>
+											<TextBlock Text="{Binding Type}"  Margin="30,30,0,0" FontSize="24" Classes="BasketText" Name="TypeP"></TextBlock>
+											<TextBlock Text="{Binding KolProduct}" Margin="30,20,0,0" FontSize="24" Classes="BasketText" Name="CountProd"></TextBlock>
+											<StackPanel Margin="30,70,0,0" Orientation="Horizontal">
+												<TextBlock FontSize="24" Margin="0,10,0,0" Classes="BasketText">Цена: </TextBlock>
+												<TextBlock Text="{Binding CostProduct}" Margin="40,0,0,0" FontSize="40" Name="SumProduct" Foreground="#FF7C7C">  </TextBlock>
+											</StackPanel>
+											<Button Click="DeleteProductFromBasket" Tag="{Binding DeleteId}" Margin="0,20,0,0" CornerRadius="10" Width="302" Height="45" Background="#EDD9D3" >
+												<TextBlock Margin="0,5,0,0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#877A64">Удалить</TextBlock>
+											</Button>
+											<StackPanel Orientation="Horizontal">
+												<Button Click="DobMinus" Tag="{Binding DobMinusId}" Margin="-200,20,0,0" CornerRadius="10" Width="202" Height="45" Background="#EDD9D3" >
+													<TextBlock Margin="0,5,0,0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#877A64">-</TextBlock>
+												</Button>
+												<Border Margin="0,20,0,0" Width="112" Height="45" Background="#EDD9D3" CornerRadius="10">
+													<TextBlock Name="kol" Text="{Binding KolProdAfterClick}"></TextBlock>
+												</Border>
+												<Button Click="DobPlus" Tag="{Binding DobPlusId}" Margin="0,20,0,0" CornerRadius="10" Width="202" Height="45" Background="#EDD9D3" >
+													<TextBlock Margin="0,5,0,0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#877A64">+</TextBlock>
+												</Button>
+											</StackPanel>
+										</StackPanel>
+									</StackPanel>
+								</Border>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+					<StackPanel>
+						<TextBlock Margin="76,108,0,0" Classes="TextBusk">Итого:</TextBlock>
+						<TextBlock Name="SumAll"></TextBlock>
+						<TextBlock Margin="76,102,0,0" Classes="TextBusk">Скидка:</TextBlock>
+						<TextBlock Name="finalSale"></TextBlock>
+						
+						<TextBlock Margin="76,264,0,0" Classes="TextBusk">Использовать промокод:</TextBlock>
+						<TextBlock Background="White" Name="promo" HorizontalAlignment="Center" Margin="67,39,0,0" Width="555" Height="81"></TextBlock>
+						<StackPanel Orientation="Horizontal">
+							<Button Click="OpenText" Margin="60,37,0,0" Width="250" Height="63" CornerRadius="10" HorizontalAlignment="Center" Background="#EDD9D3">
+								<TextBlock Margin="0,6,0,0" FontSize="36" FontWeight="Medium" HorizontalAlignment="Center" Foreground="#FF7C7C">Вставить</TextBlock>
+							</Button>
+						<Button Click="ClosePromo" Margin="60,37,0,0" Width="250" Height="63" CornerRadius="10" HorizontalAlignment="Center" Background="#EDD9D3">
+								<TextBlock Margin="0,6,0,0" FontSize="36" FontWeight="Medium" HorizontalAlignment="Center" Foreground="#FF7C7C">Отменить</TextBlock>
+							</Button>
+						</StackPanel>
+						<TextBlock Foreground="#FF7C7C" FontSize="36" TextAlignment="Center"  Margin="50,60,0,0" Name="mas"></TextBlock>
+					</StackPanel>
+					
+				</StackPanel>
+			</StackPanel>
+			<StackPanel Background="#FFF9EA" Grid.Row="2"  Height="480">
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Margin="20,0,0,0" Classes="TextBusk">Ваши бонусы: </TextBlock>
+					<TextBlock Name="bonus" FontWeight="Bold" Foreground="#FF7C7C" FontSize="36" TextAlignment="Center" Margin="20,0,0,0" HorizontalAlignment="Left"  Background="#EDD9D3" Width="400"></TextBlock>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<Button Click="NullAllBonus" Margin="20,37,0,0" Width="409" Height="63" CornerRadius="10" HorizontalAlignment="Left" Background="#EDD9D3">
+						<TextBlock Margin="0,6,0,0" FontSize="36" FontWeight="Medium" HorizontalAlignment="Center" Foreground="#FF7C7C">Списать все бонусы</TextBlock>
+					</Button>
+					<TextBlock Classes="TextBusk" Margin="20,40,0,0">Или</TextBlock>
+					<Button Click="BackBonus" Margin="20,37,0,0" Width="609" Height="63" CornerRadius="10" HorizontalAlignment="Left" Background="#EDD9D3">
+						<TextBlock Margin="0,6,0,0" FontSize="36" FontWeight="Medium" HorizontalAlignment="Center" Foreground="#FF7C7C">Отменить списание бонусов</TextBlock>
+					</Button>
+				</StackPanel>
+				
+			</StackPanel>
+	</Grid>
+	</ScrollViewer>
+</Window>

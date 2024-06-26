@@ -1,0 +1,123 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="1566"
+        x:Class="AnimeCafe.Admin"
+		Width="1515"
+		x:CompileBindings="False"
+		CanResize="True"
+		WindowState="FullScreen"
+        Title="Admin">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="MenuItem.MenuTwo">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="TextBlock.MenuTwo2">
+			<Setter Property="FontSize" Value="36"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Click="Exit" Background="#FFF9EA" Margin="318,12,0,0" Grid.Column="3">
+						<TextBlock Classes="H1" >Выйти из аккаунта</TextBlock>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<Border Grid.Row="1" Height="3" Background="#5A4C35"></Border>
+			<StackPanel Grid.Row="2" Height="1511" Background="#FFF9EA">
+				<TextBlock Classes="H2" Margin="0,44,0,0">Администратор</TextBlock>
+				<Menu HorizontalAlignment="Center" Margin="0,53,0,0" Grid.Row="0">
+					<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+					<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+					<MenuItem Click="Cafes" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+					<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+					<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+					<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+				</Menu>
+				<Border Margin="0,63,0,0" HorizontalAlignment="Center" Width="1455" Height="114" CornerRadius="20" Background="#EDD9D3">
+					<Border Margin="0,0,0,0" HorizontalAlignment="Center" Width="1375" Height="59" CornerRadius="10" Background="#FFF9EA">
+						<Menu HorizontalAlignment="Center">
+							<MenuItem Click="AddProductClick" Classes="MenuTwo" Header="Добавить товар"></MenuItem>
+							<MenuItem Click="AddNewArticle" Classes="MenuTwo" Margin="107,0,0,0" Header="Добавить статью"></MenuItem>
+							<MenuItem Click="AllProductsSee" Classes="MenuTwo" Margin="107,0,0,0" Header="Все товары"></MenuItem>
+							<MenuItem Click="OpenAllArt" Classes="MenuTwo" Margin="107,0,0,0" Header="Все статьи"></MenuItem>
+						</Menu>
+					</Border>
+				</Border>
+				<TextBlock Margin="0,61,0,0" Classes="H2">Промокоды</TextBlock>
+				<Border Margin="0,63,0,0" HorizontalAlignment="Center" Width="1455" Height="154" CornerRadius="20" Background="#EDD9D3">
+					<Border Margin="0,0,0,0" HorizontalAlignment="Center" Width="1310" Height="75" CornerRadius="10" Background="#FFF9EA">
+						<StackPanel Orientation="Horizontal" >
+							<TextBlock Margin="129,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Classes="MenuTwo2">Название</TextBlock>
+							<TextBlock Margin="288,0,0,0" VerticalAlignment="Center" Classes="MenuTwo2">Скидка</TextBlock>
+							<Button Click="NewPromos" Background="#FFF9EA" Margin="288,0,0,0">
+								<TextBlock  VerticalAlignment="Center" Classes="MenuTwo2">Добавить</TextBlock>
+							</Button>
+						</StackPanel>
+					</Border>
+				</Border>
+				<StackPanel Orientation="Horizontal">
+					<TextBox Name="NamePromoOne" Watermark="Название Промокода" Margin="40,70,0,0" CornerRadius="10" BorderBrush="White" Width="551" Background="White" Height="81"></TextBox>
+					<TextBox Name="SalePromoOne" Watermark="Скидка Промокода" Margin="40,70,0,0" CornerRadius="10" BorderBrush="White" Width="551" Background="White" Height="81"></TextBox>
+				</StackPanel>
+				
+				<ListBox CornerRadius="20" Margin="0,30,0,0"  Name="Promos" Width="1416" Height="533" Background="#EDD9D3" >
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<Border CornerRadius="10" Margin="0,36,0,0" HorizontalAlignment="Center" Background="#FFF9EA" Width="1362" Height="231">
+								<StackPanel Orientation="Horizontal">
+									<Grid ColumnDefinitions="551,551, Auto">
+										<TextBlock VerticalAlignment="Center" Foreground="#53451F" FontWeight="Bold" FontSize="40" HorizontalAlignment="Center" Grid.Column="0" Text="{Binding NamePromo}"></TextBlock>
+										<TextBlock Text="{Binding SalePromo}" VerticalAlignment="Center" Foreground="#53451F" FontWeight="Bold" FontSize="40" HorizontalAlignment="Center" Grid.Column="1"></TextBlock>
+										<Button Tag="{Binding idDeletePromo}" Click="DeletePromos" Grid.Column="2" Margin="0,0,0,0" CornerRadius="10" Width="132" Height="45" Background="#EDD9D3" >
+											<TextBlock Margin="0,5,0,0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#877A64">Удалить</TextBlock>
+										</Button>
+									</Grid>
+								</StackPanel>
+							</Border>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

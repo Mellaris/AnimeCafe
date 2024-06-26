@@ -1,0 +1,172 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="6201"
+        x:Class="AnimeCafe.Menu"
+		Width="1515"
+		x:CompileBindings="False"
+		CanResize="True"
+		WindowState="FullScreen"
+        Title="Menu">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="Image.ImMenuLeft">
+			<Setter Property="Width" Value="400"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Margin" Value="65"/>
+		</Style>
+		<Style Selector="Image.ImMenuR">
+			<Setter Property="Width" Value="400"/>
+			<Setter Property="HorizontalAlignment" Value="Right"/>
+			<Setter Property="Margin" Value="84,0,0,0"/>
+		</Style>
+		<Style Selector="TextBlock.MenuH3">
+			<Setter Property="FontSize" Value="32"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Margin" Value="250,207,0,0"/>
+		</Style>
+		<Style Selector="TextBlock.MenuText">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Margin" Value="0,80,0,0"/>
+			<Setter Property="TextAlignment" Value="Center"/>
+			<Setter Property="TextWrapping" Value="Wrap"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="905,Auto">
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Column="0">
+						<TextBlock Classes="H1" Margin="55,19,0,0" >Время работы пн-вс 10-23</TextBlock>	
+						<TextBlock Classes="H1" Margin="109,19,0,0" >E-mail: animecafe@gmail.com</TextBlock>
+						<TextBlock Classes="H1" Margin="109,19,0,0" >+ 7 (981) 909-99-00</TextBlock>
+					</StackPanel>
+					
+					<StackPanel  Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
+						<Button Margin="468,12,0,0">
+							<Image Grid.Column="0" Grid.Row="0"  />
+						</Button>
+						<Button  Margin="21,12,0,0" >
+							<Image></Image>
+						</Button>
+						<Button  Margin="21,12,0,0">
+							<Image></Image>
+						</Button>
+					</StackPanel>
+				</Grid>
+			</StackPanel>
+			<Image Grid.Row="1" Source="\Assets\Еда.png"/>
+			<StackPanel Grid.Row="2" Height="100" Background="#FFF9EA">
+				<Menu HorizontalAlignment="Center" Margin="0,41,0,0">
+					<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+					<MenuItem Classes="MenuSpan" Margin="120,0,0,0" Header="Меню"></MenuItem>
+					<MenuItem Click="Cafes" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+					<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+					<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+					<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+				</Menu>
+			</StackPanel>
+			<StackPanel Background="#FFF9EA" Height="626" Grid.Row="3">
+				<Border Margin="0,0,0,0" Width="1387" Height="565" Background="#EDD9D3" CornerRadius="10" HorizontalAlignment="Center">
+					<StackPanel>
+						<TextBlock Classes="H2" Margin="0,40,0,0">Наше Меню</TextBlock>
+						<Border Margin="0,20,0,0" HorizontalAlignment="Center" Width="1236" Height="360" Background="#FFF9EA" CornerRadius="15">
+							<TextBlock Margin="0,80,0,0" LineHeight="55" FontWeight="Bold" Foreground="#877A64" FontSize="32" xml:space="preserve" TextAlignment="Center" Width="1052" TextWrapping="Wrap">Погрузитесь в подлинные вкусы корейской кухни в нашем уютном кафе. Наше тщательно составленное меню предлагает широкий выбор традиционных и современных блюд, которые удовлетворят все вкусовые предпочтения. </TextBlock>
+						</Border>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+			<StackPanel Background="#EDD9D3" Height="4658" Grid.Row="4">
+				<Border CornerRadius="15"  Margin="0,58,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<Image Classes="ImMenuLeft" Source="\Assets\Котопудинг.png"></Image>
+						<StackPanel>
+							<TextBlock Classes="MenuH3">Котопудинг</TextBlock>
+							<TextBlock Width="678" Classes="MenuText">Представьте себе облачко сладкого блаженства, нежно подрагивающее в  вашей ложке. Это корейский трясущийся пудинг-котик, десерт, который  пробудит ваши вкусовые рецепторы и заставит ваше сердце трепетать от  восторга.</TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<Border CornerRadius="15"  Margin="0,97,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<StackPanel>
+							<TextBlock Margin="330,207,0,0" Classes="MenuH3">Пуннопан</TextBlock>
+							<TextBlock Margin="83,80,0,0" Width="678" Classes="MenuText">Представьте себе золотистую вафлю, хрустящую снаружи и мягкую  внутри, источающую восхитительный аромат. Вот он, корейский пуннопан,  уличное лакомство, которое покорит ваше сердце и вкусовые рецепторы.</TextBlock>
+						</StackPanel>
+						<Image Classes="ImMenuR" Source="\Assets\Пуннопан.png"></Image>
+					</StackPanel>
+				</Border>
+				<Border CornerRadius="15"  Margin="0,97,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<Image Classes="ImMenuLeft" Source="\Assets\Бабл ти.png"></Image>
+						<StackPanel>
+							<TextBlock Classes="MenuH3">Бабл ти</TextBlock>
+							<TextBlock  Width="678" Classes="MenuText">Сладкий чай, смешанный с молоком или фруктовым соком, является основой бабл ти. Он бывает самых разных вкусов, от классического черного до фруктовых, таких как манго, клубника и персик.</TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<Border CornerRadius="15"  Margin="0,97,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<StackPanel>
+							<TextBlock Margin="330,207,0,0" Classes="MenuH3">Корн-дог</TextBlock>
+							<TextBlock Margin="83,80,0,0" Width="678" Classes="MenuText">Хрустящая золотистая корочка обволакивает сочную сосиску, а внутри таится тягучее, расплавленное сырное блаженство. Корн-дог с плавленым сыром – это взрыв вкуса и текстур, где соленость сосиски уравновешивается сладостью теста, а тягучесть сыра добавляет еще один уровень удовольствия.</TextBlock>
+						</StackPanel>
+						<Image Classes="ImMenuR" Source="\Assets\Корн-дог.png"></Image>
+					</StackPanel>
+				</Border>
+				<Border CornerRadius="15"  Margin="0,97,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<Image Classes="ImMenuLeft" Source="\Assets\Чиз рамён.png"></Image>
+						<StackPanel>
+							<TextBlock Classes="MenuH3">Чиз рамён</TextBlock>
+							<TextBlock  Width="678" Classes="MenuText">Насыщенный сырный бульон с классической лапшой для рамёна и с кусочками сочной курицы. Тягучий сыр чеддер, яйцо, зелёный лук, водоросли нори с кунжутом</TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<Border CornerRadius="15"  Margin="0,97,0,0" HorizontalAlignment="Center" Width="1310" Height="650" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<StackPanel>
+							<TextBlock Margin="330,207,0,0" Classes="MenuH3">Крылья</TextBlock>
+							<TextBlock Margin="83,80,0,0" Width="678" Classes="MenuText">Поджаренные до хрустящей корочки куриные крылышки соблазняют своим золотисто-коричневым цветом и манят пьянящим ароматом жареного мяса. Каждый кусочек окутан слоем гладкого, ароматного соуса, который тает во рту, оставляя после себя изысканное и незабываемое послевкусие.</TextBlock>
+						</StackPanel>
+						<Image Classes="ImMenuR" Source="\Assets\Крылья.png"></Image>
+					</StackPanel>
+				</Border>
+				<Button Click="SpecialMenu" Margin="0,90,0,0" Background="#FFF9EA" CornerRadius="24" Width="450" Height="63" HorizontalAlignment="Center">
+					<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="32" FontWeight="ExtraBold" Foreground="#5A4C35">Меню именинника</TextBlock>
+				</Button>
+			</StackPanel>
+			<StackPanel Margin="0,0,0,0" Grid.Row="5" Height="407" Background="#EDD9D3">
+				<TextBlock Margin="263,100,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

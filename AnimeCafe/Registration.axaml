@@ -1,0 +1,102 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="1050"
+        x:Class="AnimeCafe.Registration"
+		Width="1515"
+		x:CompileBindings="False"
+		WindowState="FullScreen"
+		CanResize="True"
+        Title="Registration">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBox.Border">
+			<Setter Property="Width" Value="502"/>
+			<Setter Property="Height" Value="36"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Background" Value="White"/>
+			<Setter Property="BorderBrush" Value="White" />
+			<Setter Property="CornerRadius" Value="5"/>
+			<Setter Property="Margin" Value="0,16,0,0"/>
+		</Style>
+		<Style Selector="TextBlock.RegistrText">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Margin" Value="0,20,0,0"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Margin="468,12,0,0" Grid.Column="3">
+						<Image Grid.Column="0" Grid.Row="0"  />
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<StackPanel Grid.Row="1" Height="1005" Background="#EDD9D3">
+				<TextBlock Classes="H2" Margin="0,62,0,0">Регистрация</TextBlock>
+				<Border Margin="0,67,0,0" Width="901" Height="626" Background="#FFF9EA" CornerRadius="30" HorizontalAlignment="Center">
+					<StackPanel Margin="60,67,0,0">
+						<TextBlock Classes="RegistrText">Имя</TextBlock>
+						<TextBox Name="NameUser" Classes="Border" ></TextBox>
+						<TextBlock  Classes="RegistrText">Логин</TextBlock>
+						<TextBox Name="LoginUser" Classes="Border" ></TextBox>
+						<TextBlock  Classes="RegistrText">Почта</TextBlock>
+						<TextBox Name="EmailUser" Classes="Border"></TextBox>
+						<TextBlock  Classes="RegistrText">Пароль</TextBlock>
+						<TextBox PasswordChar="*" Name="PasswordUser" Classes="Border"></TextBox>
+						<StackPanel Orientation="Horizontal">
+							<Button Click="RunAccount" HorizontalAlignment="Left" Background="#EDD9D3" Width="251" Height="59" CornerRadius="5" Margin="0,42,0,0">
+								<TextBlock Margin="0,6,0,0" HorizontalAlignment="Center" FontWeight="Bold" FontSize="32" Foreground="#5A4C35">Далее</TextBlock>
+							</Button>
+							<Button Click="Login_Click" CornerRadius="5" HorizontalAlignment="Left" Margin="194,42,0,0" Width="355" Background="#EDD9D3" Height="59">
+								<TextBlock Margin="0,6,0,0" HorizontalAlignment="Center" FontWeight="Bold" FontSize="32" Foreground="#5A4C35">Уже есть Аккаунт</TextBlock>
+							</Button>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<StackPanel Margin="0,48,0,0">
+					<TextBlock HorizontalAlignment="Left" Name="Message" FontWeight="ExtraBold" Foreground="#FF7C7C" FontSize="28" Margin="50,0,0,0"></TextBlock>
+					<Button Click="Main_Click" Margin="0,0,103,0" CornerRadius="10" HorizontalAlignment="Right" Width="331" Background="#FFF9EA" Height="51">
+						<TextBlock HorizontalAlignment="Center" FontSize="32" FontWeight="Bold" Foreground="#53451F">Главная</TextBlock>
+					</Button>
+				</StackPanel>
+				
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

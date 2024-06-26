@@ -1,0 +1,183 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="2800"
+        x:Class="AnimeCafe.Shop"
+		Width="1515"
+		x:CompileBindings="False"
+		CanResize="True"
+		WindowState="FullScreen"
+        Title="Shop">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.BasketText">
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.TextBusk">
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="FontSize" Value="40"/>
+		</Style>
+		<Style Selector="TextBlock.TextStart">
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+			<Setter Property="FontSize" Value="36"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="905,520">
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Column="0">
+						<TextBlock Classes="H1" Margin="55,19,0,0" >Время работы пн-вс 10-23</TextBlock>
+						<TextBlock Classes="H1" Margin="109,19,0,0" >E-mail: animecafe@gmail.com</TextBlock>
+						<TextBlock Classes="H1" Margin="109,19,0,0" >+ 7 (981) 909-99-00</TextBlock>
+					</StackPanel>
+
+					<StackPanel  Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
+						<Button Margin="0,12,0,0">
+							<TextBlock>Аккаунт</TextBlock>
+						</Button>
+						<Button  Margin="21,12,0,0" >
+							
+						</Button>
+						<Button  Margin="21,12,0,0">
+							
+						</Button>
+					</StackPanel>
+
+				</Grid>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" Grid.Row="1" Height="140" Background="#EDD9D3">
+				<Grid ColumnDefinitions="Auto,Auto">
+					<TextBlock Grid.Column="0" Margin="20,0,0,0" FontWeight="Regular" Foreground="#5F4C0B" FontSize="64" HorizontalAlignment="Left" VerticalAlignment="Center">
+						Shop<Span Foreground="#FF7C7C">Anime</Span>
+					</TextBlock>
+					<Button Margin="630,0,0,0" Grid.Column="1" Width="507" Background="#EDD9D3" HorizontalAlignment="Right">
+						<TextBlock HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="24" Foreground="#5A4C35">Войти в аккаунт/Зарегестрироваться</TextBlock>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<StackPanel Grid.Row="2" Height="85" Background="#FFF9EA">
+				<Menu Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
+					<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+					<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+					<MenuItem Click="Cafes" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+					<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+					<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+					<MenuItem Click="Shop_Click" Classes="MenuSpan" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+				</Menu>
+			</StackPanel>
+			<StackPanel Background="#EDD9D3" Height="2287" Grid.Row="3">
+				<Border HorizontalAlignment="Center" Margin="0,34,0,0" CornerRadius="30" Background="#FFF9EA" Width="875" Height="148">
+					<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="48" Foreground="#FF7C7C">Летнее Цветение</TextBlock>
+				</Border>
+				<StackPanel Margin="28,34,0,0" Orientation="Horizontal">
+					<TextBlock VerticalAlignment="Center" Margin="" HorizontalAlignment="Left" Classes="TextStart">Каталог</TextBlock>
+					<Button Click="Basket_Click" VerticalAlignment="Center" Height="70" CornerRadius="15" HorizontalAlignment="Right" Width="250" Background="#FFF9EA" Margin="1060,0,0,0">
+						<TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Classes="TextStart">Корзина</TextBlock>
+					</Button>
+				</StackPanel>
+				<Border Margin="18,18,0,0" CornerRadius="40" HorizontalAlignment="Left" Background="#FFF9EA" Width="1197" Height="26"></Border>
+				<TextBlock Margin="161,31,0,0" FontSize="36" FontWeight="Bold" HorizontalAlignment="Left" Foreground="#FF7C7C">Самые желанные товары! </TextBlock>
+				<StackPanel Orientation="Horizontal">
+					<ListBox CornerRadius="10" HorizontalAlignment="Left" Margin="30,30,0,0" Name="TopProducts" Width="835" Height="431" Background="#FFF9EA" >
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<StackPanel Orientation="Horizontal">
+
+									<Image HorizontalAlignment="Left" Margin="27,0,0,0" Width="200" Height="333" Source="{Binding ProductImage}"></Image>
+									<StackPanel HorizontalAlignment="Right" Margin="100,40,0,0" Orientation="Vertical">
+										<TextBlock Text="{Binding NameProduct}" Margin="30,0,0,0" FontSize="32" Classes="BasketText" Name="NameTop"></TextBlock>
+										<TextBlock Text="{Binding Type}" Margin="30,30,0,0" FontSize="24" Classes="BasketText" Name="TypeTop"></TextBlock>
+										<TextBlock Text="{Binding KolProduct}" Margin="30,20,0,0" FontSize="24" Classes="BasketText" Name="KolTop"></TextBlock>
+										<StackPanel Margin="30,70,0,0" Orientation="Horizontal">
+											<TextBlock FontSize="24" Margin="0,10,0,0" Classes="BasketText">Цена: </TextBlock>
+											<TextBlock Text="{Binding CostProduct}" Name="CostTop" Margin="40,0,0,0" FontSize="40" Foreground="#FF7C7C"></TextBlock>
+										</StackPanel>
+										<Button Click="TopInBasket" Tag="{Binding AddInBaskId}" Margin="0,20,0,0" CornerRadius="10" Width="302" Height="45" Background="#EDD9D3" >
+											<TextBlock Margin="0,5,0,0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#877A64">В корзину</TextBlock>
+										</Button>
+									</StackPanel>
+								</StackPanel>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+					<Button Click="BackTopProd" Margin="50,0,0,0" Width="250" Background="#FFF9EA">
+						<TextBlock Text="🔙" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Foreground="#FF7C7C"></TextBlock>
+					</Button>
+					<Button Click="GoTopProd" Margin="50,0,0,0" Width="250" Background="#FFF9EA">
+						<TextBlock Text="🔜" FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Foreground="#FF7C7C"></TextBlock>
+					</Button>
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal" Margin="32,49,0,0">
+					<Button Click="MinusSort" Width="250" Background="#FFF9EA">
+						<TextBlock HorizontalAlignment="Center" FontWeight="Bold" FontSize="25"  Foreground="#FF7C7C">По убыванию</TextBlock>
+					</Button>
+					<Button Click="PlusSort" Margin="50,0,0,0" Width="250" Background="#FFF9EA">
+						<TextBlock  FontWeight="Bold" FontSize="25" HorizontalAlignment="Center" Foreground="#FF7C7C">По возрастанию</TextBlock>
+					</Button>
+
+				</StackPanel>
+				<TextBox Name="sear" KeyUp="Sear" Margin="32,49,0,0" Width="500" FontWeight="Bold" FontSize="25" HorizontalAlignment="Left" Foreground="#FF7C7C"></TextBox>
+
+				<TextBlock VerticalAlignment="Center" Margin="40,30,0,10" HorizontalAlignment="Left" Classes="TextStart">Товары</TextBlock>
+				<ListBox Background="#EDD9D3" HorizontalAlignment="Left" Margin="30,0,0,0" Name="ProductsBusket" Width="835" Height="1273" >
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<Border Margin="0,30,0,0" CornerRadius="10" Background="#FFF9EA" Width="800" Height="420">
+								<StackPanel Orientation="Horizontal">
+									<Image HorizontalAlignment="Left" Margin="27,0,0,0" Width="200" Height="333" Source="{Binding ProductImage}"></Image>
+									<StackPanel HorizontalAlignment="Right" Margin="100,40,0,0" Orientation="Vertical">
+										<TextBlock Text="{Binding NameProduct}" Margin="30,0,0,0" FontSize="32" Classes="BasketText" Name="Name"></TextBlock>
+										<TextBlock Text="{Binding Type}" Margin="30,30,0,0" FontSize="24" Classes="BasketText" Name="TypeP"></TextBlock>
+										<TextBlock Text="{Binding KolProduct}" Margin="30,20,0,0" FontSize="24" Classes="BasketText" Name="CountP"></TextBlock>
+										<StackPanel Margin="30,70,0,0" Orientation="Horizontal">
+											<TextBlock FontSize="24" Margin="0,10,0,0" Classes="BasketText">Цена: </TextBlock>
+											<TextBlock Text="{Binding CostProduct}" Name="CostProd" Margin="40,0,0,0" FontSize="40" Foreground="#FF7C7C"> </TextBlock>
+										</StackPanel>
+										<Button Click="AddBasketProd" Tag="{Binding AddInBaskId}" Margin="0,20,0,0" CornerRadius="10" Width="302" Height="45" Background="#EDD9D3" >
+											<TextBlock Margin="0,5,0,0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#877A64">В корзину</TextBlock>
+										</Button>
+									</StackPanel>
+								</StackPanel>
+							</Border>
+							
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+			</StackPanel>
+			<StackPanel Margin="0,0,0,0" Grid.Row="5" Height="300" Background="#EDD9D3">
+				<TextBlock Margin="263,100,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

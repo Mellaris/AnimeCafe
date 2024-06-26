@@ -1,0 +1,121 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1440" d:DesignHeight="3400"
+        x:Class="AnimeCafe.MainWindow"
+		Width="1440"
+		CanResize="True"
+		WindowState="FullScreen"
+        Title="AnimeCafe">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.TextBaza">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Margin" Value="0,15,0,0"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid Height="3400" RowDefinitions="Auto,Auto,Auto,622,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Click="Account" Background="#EDD9D3" Margin="298,12,0,0" Grid.Column="3">
+						<TextBlock>Аккаунт</TextBlock>
+					</Button>
+					<Button  Click="BasketShop" Background="#EDD9D3" Margin="20,12,0,0" Grid.Column="4">
+						<TextBlock>Корзина</TextBlock>
+					</Button>
+					<Button  Margin="20,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<StackPanel Height="1131" Background="#EDD9D3" Grid.Row="1">
+				
+				
+					<Menu Margin="119,60,0,0" Grid.Row="0">
+						<MenuItem Classes="MenuSpan" Header="Главная"></MenuItem>
+						<MenuItem Click="MenuNormal" Classes="Menu" Margin="60,0,0,0" Header="Меню"></MenuItem>
+						<MenuItem Click="Cafe_Click" Classes="Menu" Margin="60,0,0,0" Header="Наши кафе"></MenuItem>
+						<MenuItem Click="Sale_Click" Classes="Menu" Margin="60,0,0,0" Header="Акции"></MenuItem>
+						<MenuItem Click="Blog_Click" Classes="Menu" Margin="60,0,0,0" Header="Блог"></MenuItem>
+						<MenuItem Click="Shop_Click" Classes="Menu" Margin="60,0,0,0" Header="Магазин"></MenuItem>
+					</Menu>
+				
+				<StackPanel HorizontalAlignment="Left" Margin="80,32,240,0" Height="2" Width="1087"  Background="#5A4C35"></StackPanel>
+				<StackPanel  HorizontalAlignment="Left" Margin="150,23,240,0" Height="2" Width="957"  Background="#5A4C35"></StackPanel>
+				<Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto">
+					<TextBlock Foreground="#887951" FontWeight="SemiBold" Margin="98,124,0,0" FontSize="64" Grid.Row="0" Grid.Column="0">Летняя Лилия</TextBlock>
+					<TextBlock LineHeight="40" FontWeight="SemiBold" Margin="34,64,0,0" Foreground="#5F4C0B" TextAlignment="Center" Grid.Row="1" Width="592" TextWrapping="Wrap" FontSize="24" Grid.Column="0">Добро пожаловать в уютное тематическое кафе по мотивам игр в стиле аниме! Ощутите атмосферу любимой игры в каждой детали - от декора до меню. Погрузитесь в мир приключений, встречайтесь с друзьями и наслаждайтесь вкуснейшими блюдами, вдохновленными персонажами и мирами игры. Приходите и окунитесь в уникальную атмосферу “Летней Лилии” прямо здесь, в нашем кафе!</TextBlock>
+					<Image Margin="425,0,0,550" Source="\Assets\Фото 1.png" Grid.Column="1" Grid.RowSpan="2"></Image>
+					<Image Margin="0,10,300,0" Width="290" Height="267" Grid.Column="1" Grid.RowSpan="2" Source="\Assets\Фото 2.png"></Image>
+					<Image Margin="390,240,0,0" Width="140" Grid.Column="1" Grid.Row="1" Source="\Assets\Пятно 4.png"/>
+					<Image Margin="100,500,0,0" Width="268" Height="241" Source="\Assets\Фото 3.png" Grid.Column="1" Grid.Row="1"></Image>
+					<Image Margin="0,660,250,0" Grid.Column="1" Grid.Row="1" Width="97" Height="90" Source="\Assets\Пятно 5.png"/>
+				</Grid>
+			</StackPanel>
+			<StackPanel Grid.Row="2" Height="1817" Background="#FFF9EA">
+				<Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto">
+					<TextBlock Grid.Column="0" Grid.Row="0" Margin="231,110,0,0" FontWeight="SemiBold" FontSize="48" Foreground="#887951">Меню и Кухня</TextBlock>
+					<Image Margin="87,80,0,0" Source="\Assets\Еда 1.png" Grid.Column="0" Grid.Row="1"></Image>
+					<TextBlock Margin="115,110,0,0" Width="500" TextAlignment="Center" TextWrapping="Wrap" FontWeight="SemiBold" Foreground="#53451F" FontSize="24" Grid.Column="1" Grid.Row="1">Наша кухня — это волшебное место, где блюда из ваших любимых аниме-игр оживают.</TextBlock>
+					<Image Margin="87,80,0,0" Grid.Column="0" Grid.Row="2" Source="\Assets\Еда 2.png"></Image>
+					<TextBlock Margin="115,100,0,0" Width="500" TextAlignment="Center" TextWrapping="Wrap" FontWeight="SemiBold" Foreground="#53451F" FontSize="24" Grid.Column="1" Grid.Row="2">Наши блюда не только вкусные, но и приготовлены с использованием свежих, высококачественных ингредиентов.</TextBlock>
+					<Image Margin="87,80,0,0" Source="\Assets\Еда 3.png" Grid.Column="0" Grid.Row="3"></Image>
+					<TextBlock Margin="115,100,0,0" Width="500" TextAlignment="Center" TextWrapping="Wrap" FontWeight="SemiBold" Foreground="#53451F" FontSize="24" Grid.Column="1" Grid.Row="3">Мы стремимся воссоздать подлинный вкус ваших любимых аниме-игр, чтобы вы могли наслаждаться ими в реальной жизни.</TextBlock>
+					
+						<Button Click="MenuNormal" Margin="237,80,0,0" FontSize="32" Background="#EDD9D3" CornerRadius="20" Width="350" Height="65" Grid.Column="0" Grid.Row="4">
+							<TextBlock FontWeight="600" Foreground="#53451F" Padding="9" HorizontalAlignment="Center">Меню</TextBlock>
+						</Button>
+				</Grid>
+			</StackPanel>
+			<Border HorizontalAlignment="Left" Margin="0,1000,40,0" Grid.Row="2" CornerRadius="0,265,265,0" Width="1400" Height="622" Background="#EDD9D3" Grid.Column="0">
+				<Grid ColumnDefinitions="402,Auto">
+					<Image Margin="55" Grid.Column="0" Source="/Assets/Женщина с ноутбуком.png" />
+					<TextBlock Margin="46,67,0,0" FontWeight="SemiBold" Foreground="#887951" FontSize="48" Grid.Column="1">Забронировать Столик</TextBlock>
+					<StackPanel Margin="132,90,0,0" Width="787" Height="378" Grid.Column="1">
+						<TextBlock Classes="TextBaza">Выберите кафе и дату</TextBlock>
+						<TextBlock Classes="TextBaza" xml:space="preserve">Найдите желаемое кафе на нашем сайте в разделе “Наши
+кафе” и позвоните нам по номеру: +7 (981) 909-99-00 для
+бронирования</TextBlock>
+						<TextBlock Classes="TextBaza">Укажите детали</TextBlock>
+						<TextBlock Classes="TextBaza" xml:space="preserve">Сообщите нам количество человек, а также ваше имя и
+номер телефона</TextBlock>
+						<TextBlock Classes="TextBaza">Завершите  бронирование</TextBlock>
+						<TextBlock Classes="TextBaza" xml:space="preserve">Подтвердите свою бронь. За сутки до назначенного
+времени мы вам позвоним</TextBlock>
+					</StackPanel>
+				</Grid>
+			</Border>
+			<StackPanel Margin="0,0,0,215" Grid.Row="3" Height="407" Background="#EDD9D3">
+				<TextBlock Margin="263,180,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+	
+</Window>

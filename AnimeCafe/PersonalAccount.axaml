@@ -1,0 +1,121 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1515" d:DesignHeight="1719"
+        x:Class="AnimeCafe.PersonalAccount"
+		Width="1515"
+		x:CompileBindings="False"
+		WindowState="FullScreen"
+		CanResize="True"
+        Title="PersonalAccount">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="64"/>
+			<Setter Property="Foreground" Value="#53451F"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+		</Style>
+		<Style Selector="TextBlock.Border">
+			<Setter Property="Width" Value="502"/>
+			<Setter Property="Height" Value="36"/>
+			<Setter Property="HorizontalAlignment" Value="Left"/>
+			<Setter Property="Background" Value="White"/>
+			<Setter Property="Margin" Value="0,16,0,0"/>
+		</Style>
+		<Style Selector="TextBlock.RegistrText">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Margin" Value="0,20,0,0"/>
+		</Style>
+	</Window.Styles>
+	<ScrollViewer>
+		<Grid RowDefinitions="Auto,Auto,Auto">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Margin="468,12,0,0" Grid.Column="3">
+						<Image Grid.Column="0" Grid.Row="0"  />
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="21,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<StackPanel Background="#EDD9D3" Grid.Row="1" Height="1677">
+				<TextBlock Classes="H2" Margin="0,44,0,0">Личный Кабинет</TextBlock>
+				<Menu HorizontalAlignment="Center" Margin="0,53,0,0" Grid.Row="0">
+					<MenuItem Click="Main_Click" Classes="Menu" Header="Главная"></MenuItem>
+					<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+					<MenuItem Click="Cafes_Click" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+					<MenuItem Click="Sale_Click" Classes="Menu" Margin="120,0,0,0" Header="Акции"></MenuItem>
+					<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+					<MenuItem Click="Shop_Click" Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+				</Menu>
+				<Border Margin="0,54,0,0" CornerRadius="20" HorizontalAlignment="Center" Width="1416" Height="533" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<StackPanel Orientation="Vertical">
+							<Image Name="image" Width="300" Height="290" Margin="54,69,0,0" />
+							<Button Click="NewPhoto" Margin="115,30,0,0" Background="#FFFFFF" Width="219" Height="47"  VerticalAlignment="Bottom">
+								<TextBlock HorizontalAlignment="Center" Foreground="#877A64" FontSize="24" FontWeight="Bold">Добавить фото</TextBlock>
+							</Button>
+						</StackPanel>
+						<StackPanel Margin="32,43,0,0">
+							<TextBlock Classes="RegistrText">Имя</TextBlock>
+							<TextBlock Name="NameUser" Classes="Border" ></TextBlock>
+							<TextBlock  Classes="RegistrText">Логин</TextBlock>
+							<TextBlock Name="LoginUser" Classes="Border" ></TextBlock>
+							<TextBlock  Classes="RegistrText">Почта</TextBlock>
+							<TextBlock Name="EmailUser" Classes="Border"></TextBlock>
+							<TextBlock  Classes="RegistrText">Пароль</TextBlock>
+							<TextBlock Name="PasswUser" Classes="Border"></TextBlock>
+						</StackPanel>
+						<StackPanel>
+							<Button Click="Exit" Margin="89,412,0,0" Background="#FFFFFF" Width="323" Height="37"  VerticalAlignment="Bottom">
+								<TextBlock HorizontalAlignment="Center" Foreground="#877A64" FontSize="24" FontWeight="Bold">Выйти из аккаунта</TextBlock>
+							</Button>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<TextBlock Margin="0,71,0,0" Classes="H2">Бонусная Карта</TextBlock>
+				<Border Margin="0,54,0,0" CornerRadius="20" HorizontalAlignment="Center" Width="1416" Height="533" Background="#FFF9EA">
+					<StackPanel Orientation="Horizontal">
+						<Image Margin="34,10,0,0" Width="674" Source="\Assets\photo_5429514166466636582_y 1.png"/>
+						<StackPanel>
+							<TextBlock Margin="206,80,0,0" FontSize="40" FontWeight="700" Foreground="#877A64">Ваши Бонусы</TextBlock>
+							<Border Margin="195,100,0,0" HorizontalAlignment="Center" Height="50" Width="300" Background="White" BorderBrush="#EDD9D3">
+								<TextBlock Foreground="#FF7C7C" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Name="MyBonus"></TextBlock>
+							</Border>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<Button Click="Shop_Click" HorizontalAlignment="Right" Margin="0,40,111,0" CornerRadius="20" Width="583" Height="79" Background="#FFF9EA">
+					<TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Foreground="#877A64" FontSize="40" FontWeight="Bold">Купить Мерч</TextBlock>
+				</Button>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+</Window>

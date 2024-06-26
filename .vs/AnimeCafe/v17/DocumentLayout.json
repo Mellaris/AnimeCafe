@@ -1,0 +1,444 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\basket.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\basket.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\alllists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\alllists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\addproduct.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\addproduct.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\basket.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\basket.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\allarticles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\allarticles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\admin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\admin.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\editarticle.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\editarticle.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\editproducts.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\editproducts.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\addarticle.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\addarticle.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\editarticle.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\editarticle.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\articleinfoadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\articleinfoadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\allarticles.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\allarticles.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\allproducts.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\allproducts.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\addproduct.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\addproduct.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\editproducts.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\editproducts.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\addarticle.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\addarticle.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\allproducts.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\allproducts.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\shop.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\shop.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\personalaccount.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\personalaccount.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\promokodsaddclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\promokodsaddclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\registrclassaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\registrclassaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\personalaccount.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\personalaccount.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\productclassadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\productclassadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\shop.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\shop.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\registration.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\registration.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|f:\\\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0444\u0438\u043D\u0441\u043A\u0430\u044F\\animecafe\\animecafe\\registration.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{A502A35A-2B94-4787-AA57-05FCB3BC59D5}|AnimeCafe\\AnimeCafe.csproj|solutionrelative:animecafe\\registration.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 356,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Admin.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Admin.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\Admin.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Admin.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\Admin.axaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAUwBgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T17:03:13.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AllArticles.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllArticles.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\AllArticles.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllArticles.axaml",
+              "RelativeToolTip": "AnimeCafe\\AllArticles.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T16:18:03.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditProducts.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditProducts.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\EditProducts.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditProducts.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\EditProducts.axaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:35:15.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddArticle.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddArticle.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\AddArticle.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddArticle.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\AddArticle.axaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T16:10:17.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Basket.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Basket.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\Basket.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Basket.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\Basket.axaml.cs",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAwwLwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T10:05:10.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Basket.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Basket.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\Basket.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Basket.axaml",
+              "RelativeToolTip": "AnimeCafe\\Basket.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T10:05:06.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddProduct.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddProduct.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\AddProduct.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddProduct.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\AddProduct.axaml.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAowHcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T10:45:36.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AllLists.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllLists.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\AllLists.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllLists.cs",
+              "RelativeToolTip": "AnimeCafe\\AllLists.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:44:57.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditArticle.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditArticle.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\EditArticle.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditArticle.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\EditArticle.axaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T16:09:39.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditArticle.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditArticle.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\EditArticle.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditArticle.axaml",
+              "RelativeToolTip": "AnimeCafe\\EditArticle.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T16:09:40.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ArticleInfoAdd.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\ArticleInfoAdd.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\ArticleInfoAdd.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\ArticleInfoAdd.cs",
+              "RelativeToolTip": "AnimeCafe\\ArticleInfoAdd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T16:18:17.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AllArticles.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllArticles.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\AllArticles.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllArticles.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\AllArticles.axaml.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwC8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T16:20:10.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AllProducts.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllProducts.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\AllProducts.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllProducts.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\AllProducts.axaml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:39:56.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddArticle.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddArticle.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\AddArticle.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddArticle.axaml",
+              "RelativeToolTip": "AnimeCafe\\AddArticle.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T16:09:50.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditProducts.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditProducts.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\EditProducts.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\EditProducts.axaml",
+              "RelativeToolTip": "AnimeCafe\\EditProducts.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T12:35:15.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddProduct.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddProduct.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\AddProduct.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AddProduct.axaml",
+              "RelativeToolTip": "AnimeCafe\\AddProduct.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T10:45:29.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductClassAdd.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\ProductClassAdd.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\ProductClassAdd.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\ProductClassAdd.cs",
+              "RelativeToolTip": "AnimeCafe\\ProductClassAdd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:43:51.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Shop.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Shop.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\Shop.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Shop.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\Shop.axaml.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAcwGgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T12:46:30.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RegistrClassAccount.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\RegistrClassAccount.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\RegistrClassAccount.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\RegistrClassAccount.cs",
+              "RelativeToolTip": "AnimeCafe\\RegistrClassAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T13:07:50.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AllProducts.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllProducts.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\AllProducts.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\AllProducts.axaml",
+              "RelativeToolTip": "AnimeCafe\\AllProducts.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T12:39:55.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PromokodsAddClass.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\PromokodsAddClass.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\PromokodsAddClass.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\PromokodsAddClass.cs",
+              "RelativeToolTip": "AnimeCafe\\PromokodsAddClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T13:22:52.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PersonalAccount.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\PersonalAccount.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\PersonalAccount.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\PersonalAccount.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\PersonalAccount.axaml.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T13:22:54.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PersonalAccount.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\PersonalAccount.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\PersonalAccount.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\PersonalAccount.axaml",
+              "RelativeToolTip": "AnimeCafe\\PersonalAccount.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T13:07:56.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Shop.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Shop.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\Shop.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Shop.axaml",
+              "RelativeToolTip": "AnimeCafe\\Shop.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T12:46:29.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Registration.axaml.cs",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Registration.axaml.cs",
+              "RelativeDocumentMoniker": "AnimeCafe\\Registration.axaml.cs",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Registration.axaml.cs",
+              "RelativeToolTip": "AnimeCafe\\Registration.axaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAYwBcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T10:46:06.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Registration.axaml",
+              "DocumentMoniker": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Registration.axaml",
+              "RelativeDocumentMoniker": "AnimeCafe\\Registration.axaml",
+              "ToolTip": "F:\\\u041F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435_\u0424\u0438\u043D\u0441\u043A\u0430\u044F\\AnimeCafe\\AnimeCafe\\Registration.axaml",
+              "RelativeToolTip": "AnimeCafe\\Registration.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-25T10:44:06.851Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

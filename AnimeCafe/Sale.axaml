@@ -1,0 +1,242 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1440" d:DesignHeight="4970"
+		Width="1440"
+		CanResize="True"
+		WindowState="FullScreen"
+        x:Class="AnimeCafe.Sale"
+        Title="Sale">
+	<Window.Styles>
+		<Style Selector="TextBlock.H1">
+			<Setter Property="FontSize" Value="16"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+		</Style>
+		<Style Selector="MenuItem.Menu">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#5A4C35"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="MenuItem.MenuSpan">
+			<Setter Property="FontSize" Value="24"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="SemiBold"/>
+		</Style>
+		<Style Selector="Border.SaleDiv">
+			<Setter Property="CornerRadius" Value="24"/>
+			<Setter Property="Width" Value="445"/>
+			<Setter Property="Height" Value="316"/>
+			<Setter Property="Background" Value="#FFF9EA"/>
+		</Style>
+		<Style Selector="TextBlock.H2">
+			<Setter Property="FontSize" Value="32"/>
+			<Setter Property="Foreground" Value="#FF7C7C"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="TextAlignment" Value="Center"/>
+			<Setter Property="HorizontalAlignment" Value="Center"/>
+			<Setter Property="Margin" Value="0,21,0,0"/>
+		</Style>
+		<Style Selector="TextBlock.TextDivSale">
+			<Setter Property="FontSize" Value="15"/>
+			<Setter Property="Foreground" Value="#877A64"/>
+			<Setter Property="FontWeight" Value="Bold"/>
+			<Setter Property="Margin" Value="21,0,0,0"/>
+		</Style>
+	</Window.Styles>
+
+	<ScrollViewer>
+		<Grid Height="4970" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,">
+			<StackPanel Height="45" Grid.Row="0" Background="#FFF9EA">
+				<Grid ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
+					<TextBlock Classes="H1" Margin="55,19,0,0" Grid.Column="0">Время работы пн-вс 10-23</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="1">E-mail: animecafe@gmail.com</TextBlock>
+					<Image></Image>
+					<TextBlock Classes="H1" Margin="109,19,0,0" Grid.Column="2">+ 7 (981) 909-99-00</TextBlock>
+					<Button Margin="398,12,0,0" Grid.Column="3">
+						<Image Grid.Column="0" Grid.Row="0"  />
+					</Button>
+					<Button  Margin="20,12,0,0" Grid.Column="4">
+						<Image></Image>
+					</Button>
+					<Button  Margin="20,12,0,0" Grid.Column="5">
+						<Image></Image>
+					</Button>
+				</Grid>
+			</StackPanel>
+			<StackPanel Margin="0,0,0,0" Background="#FFF9EA" Height="727" Grid.Row="1">
+				<Grid RowDefinitions="Auto,Auto">
+					<Menu Margin="60,60,0,0" Grid.Row="0">
+						<MenuItem Click="Main" Classes="Menu" Header="Главная"></MenuItem>
+						<MenuItem Click="Menu_Click" Classes="Menu" Margin="120,0,0,0" Header="Меню"></MenuItem>
+						<MenuItem Click="Cafe_Click" Classes="Menu" Margin="120,0,0,0" Header="Наши кафе"></MenuItem>
+						<MenuItem Classes="MenuSpan" Margin="120,0,0,0" Header="Акции"></MenuItem>
+						<MenuItem Click="Blog_Click" Classes="Menu" Margin="120,0,0,0" Header="Блог"></MenuItem>
+						<MenuItem Click="Shop_Click"  Classes="Menu" Margin="120,0,0,0" Header="Магазин"></MenuItem>
+					</Menu>
+					</Grid>
+				</StackPanel>
+			<Border Margin="0,63,0,0" CornerRadius="24" Background="#EDD9D3" Width="1248" Height="512" Grid.Row="1">
+				<StackPanel>
+					<Grid>
+						<Image Margin="800,250,0,0" Width="368" Height="221" Source="/Assets/Корзина.png"/>
+						<TextBlock Margin="248,48,0,0" FontWeight="Bold" FontSize="64" Foreground="#5F4C0B">Наши Акции</TextBlock>
+						<TextBlock LineHeight="40" Margin="70,153,402,0" FontWeight="Bold" Foreground="#5A4C35" FontSize="27" xml:space="preserve" TextAlignment="Center" Width="737" TextWrapping="Wrap">Аниме-кафе "Летняя лилия" приглашает вас
+окунуться в мир любимых аниме и манги вместе
+с нашими эксклюзивными акциями!
+Присоединяйтесь к нам, чтобы насладиться
+вкусными блюдами и напитками, а также
+получить незабываемые впечатления и
+уникальную продукцию.</TextBlock>
+					</Grid>	
+				</StackPanel>		
+			</Border>
+
+			<StackPanel Grid.Row="2" Height="709" Background="#EDD9D3">
+				<Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,Auto,Auto">
+					<Border Classes="SaleDiv" Margin="22,278,0,0" Grid.Column="0" Grid.Row="1"  >
+						<StackPanel>
+							<TextBlock Classes="H2">Яркие выходные</TextBlock>
+							<TextBlock Margin="21,27,0,0" Classes="TextDivSale" xml:space="preserve">Посетите наше кафе в субботу или воскресенье
+и получите скидку 15% на все меню.  </TextBlock>
+							<TextBlock  Margin="21,16,0,0" Classes="TextDivSale" xml:space="preserve">Насладитесь нашими фирменными блюдами,
+такими как пушистые блинчики со взбитыми
+сливками, или освежающими коктейлями в
+стиле аниме.</TextBlock>
+							<Image Margin="122,0,0,0" Width="300" Height="164" Source="/Assets/Блинчики с ягодами.png" />
+						</StackPanel>
+					</Border>
+					<Border Classes="SaleDiv" Margin="27,278,0,0" Grid.Column="1" Grid.Row="1" >
+						<StackPanel>
+							<TextBlock Classes="H2">Удвоенный отпуск</TextBlock>
+							<TextBlock Margin="21,27,0,0" Classes="TextDivSale" xml:space="preserve">Приходите в кафе в будние дни и закажите
+любые два блюда или напитка, чтобы получить
+третье бесплатно!</TextBlock>
+							<TextBlock Margin="21,16,0,0" Classes="TextDivSale" xml:space="preserve">Отдохните от городской суеты и побалуйте себя
+вкусными угощениями в уютной атмосфере.</TextBlock>
+							<StackPanel Orientation="Horizontal">
+								<Image  Margin="0,14,0,0" Width="223" Height="198" Source="/Assets/Жёлтый подарок.png"/>
+								<Image Margin="0,0,0,0" Width="165" Height="157" Source="/Assets/Розовый подарок.png"/>
+							</StackPanel>		
+						</StackPanel>
+					</Border>
+					<Border Classes="SaleDiv" Margin="27,278,0,0" Grid.Column="2" Grid.Row="1" >
+						<StackPanel>
+							<Grid>
+								<TextBlock Classes="H2">Счастливые часы</TextBlock>
+								<TextBlock Margin="21,85,0,0" Classes="TextDivSale" xml:space="preserve">Каждый день с 15:00 до 17:00 у нас действуют
+"Счастливые часы".</TextBlock>
+								<TextBlock Margin="21,135,0,0" Classes="TextDivSale" xml:space="preserve">Получите скидку 20% на все напитки и
+десерты.</TextBlock>
+								<TextBlock Margin="21,192,0,0" Classes="TextDivSale" xml:space="preserve">Загляните к нам после работы или учебы,
+чтобы расслабиться и поднять себе
+настроение.</TextBlock>
+
+								<Image  Margin="172,190,0,60" Width="217" Height="202" Source="/Assets/Купоны.png"/>
+							</Grid>
+						</StackPanel>
+					</Border>
+				</Grid>
+			</StackPanel>
+			<Image Margin="0,0,1000,0" Grid.RowSpan="3" Width="366" Height="521" Source="/Assets/Финансы.png" />
+			
+			
+			<StackPanel Background="#EDD9D3" Height="609" Grid.Row="3">
+				<TextBlock Margin="344,68,0,0" Foreground="#53451F" FontWeight="Bold" FontSize="64">Бонусная Программа!</TextBlock>
+				<Border Margin="0,71,0,0" CornerRadius="24" Background="#FFF9EA" Width="1383" Height="321">
+					<StackPanel>
+						<TextBlock LineHeight="45" Margin="54,54,0,0" FontWeight="SemiBold" Foreground="#877A64" FontSize="27" xml:space="preserve">Станьте постоянным гостем аниме-кафе "Летняя лилия" и присоединяйтесь к нашей
+бонусной программе. Собирайте баллы за каждый заказ и обменивайте их на</TextBlock>
+						<TextBlock Margin="54,0,0,0" FontWeight="SemiBold" Foreground="#FF7C7C" FontSize="27">бесплатные блюда, напитки и эксклюзивный мерч.</TextBlock>
+						<StackPanel Margin="543,47,0,0" Orientation="Horizontal">
+							<Button Click="Menu_Click" CornerRadius="24" Width="314" Height="74" Background="#EDD9D3">
+								<TextBlock Padding="91,14,0,0" FontWeight="Bold" FontSize="36" Foreground="#53451F">Меню</TextBlock>
+							</Button>
+							<Button Click="Shop_Click" Margin="151,0,0,0" CornerRadius="24" Width="314" Height="74"  Background="#EDD9D3">
+								<TextBlock Padding="104,14,0,0" FontWeight="Bold" FontSize="36" Foreground="#53451F">Мерч</TextBlock>
+							</Button>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+
+
+			<StackPanel Background="#FFF9EA" Height="2483" Grid.Row="4">
+
+				<StackPanel>
+					<Grid>
+						<TextBlock HorizontalAlignment="Center" Margin="0,63,0,0" FontSize="64" Foreground="#53451F" FontWeight="Bold">День Рождения!</TextBlock>
+						<TextBlock HorizontalAlignment="Center" Margin="0,184,0,0" FontSize="32" Foreground="#877A64" FontWeight="Bold" xml:space="preserve" TextAlignment="Center" Width="744" TextWrapping="Wrap">Отпразднуйте свой день рождения в
+незабываемой атмосфере аниме-кафе
+"Летняя лилия"! Мы приготовили для вас
+эксклюзивную акцию и праздничные
+сюрпризы.</TextBlock>
+						<Image HorizontalAlignment="Right" Width="372" Height="379" Source="\Assets\Ellipse 13.png"/>
+					</Grid>
+				</StackPanel>
+				
+				<Grid>
+					<TextBlock Margin="80,97,0,0" FontWeight="ExtraBold" FontSize="40" Foreground="#53451F">Акция "С днем рождения, отаку!"</TextBlock>
+					<Border Margin="40,195,0,0" HorizontalAlignment="Left" CornerRadius="24" Background="#EDD9D3" Width="1122" Height="389">
+						<StackPanel>
+							<TextBlock FontWeight="SemiBold" Margin="27, 43, 0, 0" xml:space="preserve" FontSize="32" Foreground="#877A64">В день своего рождения предъявите удостоверение личности
+на кассе и получите скидку <Span Foreground="#FF7C7C">10%</Span> на весь заказ. </TextBlock>
+							<TextBlock FontWeight="SemiBold" Margin="27, 35, 0, 0" xml:space="preserve" FontSize="32" Foreground="#877A64">Насладитесь любимыми блюдами, напитками и десертами из
+нашего <Span Foreground="#FF7C7C">тематического меню.</Span></TextBlock>
+							<Button Click="SpecialMenu" Margin="606,43,0,0" CornerRadius="24" Width="450" Height="63" Background="#FFF9EA">
+								<TextBlock Margin="45,5,0,0" FontSize="32" FontWeight="ExtraBold" Foreground="#5A4C35">Тематическое меню</TextBlock>
+							</Button>
+						</StackPanel>
+					</Border>
+				</Grid>
+				<Grid>
+					<TextBlock Margin="296,101,0,0" FontWeight="ExtraBold" FontSize="40" Foreground="#53451F">Праздничные сюрпризы</TextBlock>
+					<TextBlock Margin="79,189,0,0" FontWeight="Bold" Foreground="#FF7C7C" FontSize="24">Бесплатный десерт</TextBlock>
+					<Border Margin="68,240,0,0" CornerRadius="24" HorizontalAlignment="Left" Background="#EDD9D3" Width="1241" Height="127">
+						<TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" LineHeight="32" FontWeight="SemiBold" Margin="0, 0, 0, 0" xml:space="preserve" FontSize="20" Foreground="#877A64">Закажите любое основное блюдо и получите в подарок фирменный десерт <Span Foreground="#FF7C7C">"Радуга вкусов"</Span> - яркое и вкусное
+угощение, которое сделает ваш праздник еще слаще.</TextBlock>
+					</Border>
+				</Grid>
+				<StackPanel  HorizontalAlignment="Stretch" Margin="20,20,0,0" Orientation="Horizontal">
+					<Image Source="\Assets\fc032738-7a71-4470-b7a0-902eb87d3114-3 1.png"/>
+					<Image Margin="76,0,0,0" Source="\Assets\03b85f64-87a6-4c46-bf4b-25f93d79fb57 1.png"/>
+					<Image HorizontalAlignment="Right" Margin="76,0,0,0" Source="\Assets\7e74257a-cb5c-42b3-a6f1-bc3f146630ad 1.png"/>
+				</StackPanel>
+				<Grid>
+					<TextBlock Margin="68,62,0,0" FontWeight="Bold" Foreground="#FF7C7C" FontSize="24">Открытка с поздравлением</TextBlock>
+					<Border Margin="55,108,0,0" CornerRadius="24" HorizontalAlignment="Left" Background="#EDD9D3" Width="1241" Height="127">
+						<TextBlock Margin="64,41,0,0" LineHeight="32" FontSize="20" Foreground="#877A64" FontWeight="SemiBold" xml:space="preserve">Наша команда вручит вам эксклюзивную открытку с поздравлением и пожеланиями от аниме-кафе
+"Летняя лилия".</TextBlock>
+					</Border>
+					
+				</Grid>
+				<TextBlock Margin="55,58,0,0" HorizontalAlignment="Left" TextAlignment="Center" Width="1307" TextWrapping="Wrap" FontSize="24" Foreground="#53451F" FontWeight="Medium" xml:space="preserve">P.S.  Чтобы воспользоваться акцией и получить праздничные сюрпризы, 
+необходимо предварительно забронировать столик по телефону. Не забудьте взять с собой <Span Foreground="#FF7C7C">удостоверение</Span> 
+личности для подтверждения даты рождения.</TextBlock>
+				<Grid>
+					<StackPanel Orientation="Horizontal">
+						<Border Margin="55,70,0,0" HorizontalAlignment="Left" Width="1024" Height="207" Background="#EDD9D3" CornerRadius="24">
+							<TextBlock Margin="0,30,0,0" FontWeight="SemiBold" FontSize="32" Foreground="#5A4C35" xml:space="preserve" TextAlignment="Center" Width="830" TextWrapping="Wrap">Отпразднуйте свой день рождения в аниме-
+кафе "Летняя лилия" и получите незабываемые
+впечатления, вкусные угощения и
+эксклюзивные подарки!</TextBlock>
+						</Border>
+						<Image HorizontalAlignment="Left" Margin="130,60,0,0" Source="\Assets\icons8-arrow-100 1.png" />
+					</StackPanel>	
+				</Grid>
+			</StackPanel>
+			<Image HorizontalAlignment="Left" Grid.RowSpan="5" Margin="20,0,960,40" Width="368" Height="443" Source="\Assets\casual-life-3d-birthday-cake 1.png"/>
+			<Image Margin="0,1600,0,0"  Grid.RowSpan="5" HorizontalAlignment="Right" Width="268" Source="\Assets\Ellipse 16.png"/>
+			<Image Grid.RowSpan="5" HorizontalAlignment="Right" Margin="0,600,0,0" Width="368" Source="\Assets\3d-casual-life-balloons-1 1.png"/>
+			<StackPanel Margin="0,0,0,215" Grid.Row="5" Height="407" Background="#EDD9D3">
+				<TextBlock Margin="200,130,0,0"  FontWeight="Bold" FontSize="24" xml:space="preserve">
+					                ООО РОССИ. ИНН 7811057177. ОГРН 1037825009287.
+					г. Санкт-Петербург, набережная Мойки, д. 82 литера А офис 19 Н, 14 Н
+				</TextBlock>
+			</StackPanel>
+		</Grid>
+	</ScrollViewer>
+	
+</Window>
